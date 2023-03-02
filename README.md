@@ -1,3 +1,3 @@
 # Personal Website
-#### Copy/Paste 'asiandallas.github.io' to run website
+Copy/Paste 'asiandallas.github.io' to run website
 
