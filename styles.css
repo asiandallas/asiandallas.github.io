@@ -1,0 +1,68 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 5000px;
+    background-color: rgb(154, 163, 170);
+    padding: top;
+    padding: left;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.nav-bar a{
+    padding: 30px;
+    color: rgb(64, 75, 108);
+    text-decoration: none;
+}
+
+.nav-bar a:hover{
+    color: rgb(241, 241, 241);
+}
+
+.nav-bar a:active{
+    color: rgb(223, 165, 165);
+}
+
+table a{
+    text-decoration: none;
+    color: rgb(57, 57, 223);
+}
+
+table a:hover{
+    color: rgb(174, 174, 189);
+}
+
+h1{
+    text-align: center;
+    color:rgb(162, 54, 54);
+}
+
+h2{
+    border-bottom: 1px solid black;
+}
+
+body{
+    background-color: lightcyan;
+    font-family:Trebuchet MS, sans-serif;
+    margin-left: 170px;
+}
+
+ul{
+    margin-bottom: 15px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+hr{
+    background-color: black;
+    height: 1px;
+}
+
+.picture{
+    height: 300px;
+    margin: 20px
+}
