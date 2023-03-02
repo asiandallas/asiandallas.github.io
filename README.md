@@ -1,2 +1,2 @@
-# Personal Website - Copy/Paste 'asiandallas.github.io' to run 
+# Personal Website -  Search 'asiandallas.github.io' to run 
 
