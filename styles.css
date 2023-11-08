@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(90deg, #111010, #353131);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    overflow: hidden;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 20px;
+}
+
+.navbar a:hover{
+    color: silver;
+    transition: color 0.2s ease-in-out;
+
+}
+
+.navbar a:first-child {
+   float: left;
+}
+
+.intro{
+    margin-top: 20%;
+    margin-left: 20%;
+
+}
+
+.small-text{
+    font-size: 30px;
+}
+
+.large-text{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.bio{
+    font-size: 20px;
+}
