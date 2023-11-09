@@ -1,12 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    background: linear-gradient(90deg, #111010, #353131);
+    background: linear-gradient(90deg, #181848, #2a2a59);
     color: white;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
     overflow: hidden;
+    background-color: #181848;
+    width: 100%;
 }
 
 .navbar a{
@@ -14,6 +21,7 @@ body {
     color: white;
     float: right;
     margin: 20px;
+    color:rgb(95, 192, 160);
 }
 
 .navbar a:hover{
@@ -22,25 +30,61 @@ body {
 
 }
 
-.navbar a:first-child {
-   float: left;
-}
-
 .intro{
-    margin-top: 20%;
-    margin-left: 20%;
+    margin-top: 20vh; /* You can adjust the vertical position as needed */
+    text-align: center;
 
 }
 
 .small-text{
     font-size: 30px;
+    color:rgb(95, 192, 160);
 }
 
 .large-text{
     font-size: 70px;
+    font-weight: 900;
     margin-bottom: 50px;
 }
 
 .bio{
     font-size: 20px;
 }
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 1000px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; 
+    margin: 20px; 
+    border: none;
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+    width: 180px;
+    font-size: x-large;
+}
+
+.button img {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 30px; 
+}
+
+.button:hover {
+    background-color: silver;
+}
+
+.section{
+   margin-bottom: 100px;
+   margin-left: 50px;
+}
+
