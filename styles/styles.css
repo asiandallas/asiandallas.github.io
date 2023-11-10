@@ -83,8 +83,27 @@ body {
     background-color: silver;
 }
 
+.about-content {
+    display: flex;
+    align-items: center; 
+    width: 1200px;
+}
+
+.text h2{
+    color: rgb(95, 192, 160);
+}
+
 .section{
-   margin-bottom: 100px;
    margin-left: 50px;
+}
+
+.images{
+    margin-left:200px;
+    margin-top: 50px;
+}
+
+.images img{
+    border-radius: 5px;
+    margin-bottom: 80px;
 }
 
