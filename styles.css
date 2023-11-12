@@ -3,7 +3,7 @@ html{
 }
 
 body {
-    background: linear-gradient(90deg, #181848, #2a2a59);
+    background: linear-gradient(90deg, #1a1a49, #39396f);
     color: white;
     font-family: 'Inconsolata', monospace;
     margin: 0;
@@ -16,7 +16,7 @@ body {
     top: 0;
     width: 100%;
     transition: top 0.3s;
-    background-color: #181848;
+    background-color: #1e1e56;
 }
 
 .navbar-hidden {
@@ -34,7 +34,6 @@ body {
 .navbar a:hover{
     color: silver;
     transition: color 0.2s ease-in-out;
-
 }
 
 .intro{
@@ -121,18 +120,26 @@ body {
 }
 
 .experience-box{
-    padding: 20px;
+    padding: 15px;
     margin: 40px;
     margin-left: 1px;
     box-sizing: border-box;
+    min-height: 100px;
     display: flex;
-    border: 2px solid rgb(95, 192, 160);
+    border-top: 1.5px solid rgb(95, 192, 160);
 }
 
-.experience-box img {
-    width: 100px; 
-    height: auto; 
-    margin-right: 20px;
+.experience-details{
+    flex-direction: column;
+    min-width: 300px;
+    margin-left: 10px;
+}
+
+.experience-summary {
+    flex-direction: column;
+    margin-left: 50px; 
+    margin-right: 50px;
+    align-self: center;
 }
 
 .project-content{
@@ -147,8 +154,7 @@ body {
 
 .project-box:hover{
     transform: scale(1.05); 
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.2);
 }
 
 .project-box{
@@ -158,6 +164,7 @@ body {
     width: 300px;
     height: 430px;
     margin: 20px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 /* Center the single project on the second row */
