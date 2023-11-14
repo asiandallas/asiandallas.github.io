@@ -96,7 +96,7 @@ body {
 }
 
 .text h2{
-    color: rgb(95, 192, 160);
+    color: #5fc0a0;
 }
 
 .section{
@@ -127,6 +127,11 @@ body {
     min-height: 100px;
     display: flex;
     border-top: 1.5px solid rgb(95, 192, 160);
+}
+
+.experience-box:hover{
+    transform: scale(1.05); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .experience-details{
