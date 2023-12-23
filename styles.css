@@ -7,10 +7,12 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
 }
 
 .navbar.bg-dark {
-    background-color: #12284d !important;
+    background-color: #112a4e !important;
+    transition: top 0.3s;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -19,6 +21,11 @@ body {
 
 .nav-number{
     color: #64ffda;
+}
+
+.header{
+    color: #64ffda;
+    margin-bottom: 10%; 
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -31,10 +38,20 @@ body {
     margin: 5px !important;
 }
 
-.container{
-    position: relative;
-    margin-top: 10%;
+.navbar-hidden {
+    top: -50px; 
 }
+
+.first-container {
+    margin-top: 10%; 
+}
+
+.container {
+    position: relative;
+    margin-top: 30%;
+}
+
+
 
 .intro{
     margin-top: 20vh; 
@@ -57,12 +74,15 @@ body {
     font-size: 20px;
     color: #a8b2d1
 }
+
 .social-buttons{
     display: flex; 
     align-items: center;
+    justify-content: center;
 }
 
 .button {
+    display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255); 
     color: rgb(0, 0, 0);
@@ -87,4 +107,60 @@ body {
     text-decoration: none;
 }
 
+.about-content {
+    align-items: center; 
+    width: 50%;
+    margin-left: 10%;
+    position: relative;
+}
 
+.text{
+    color: #a8b2d1;
+    flex: 1;
+}
+
+.images{
+    position: absolute;
+    left: 65%;
+    top: 15%;
+}
+
+.images img{
+    border-radius: 5px;
+    margin: 10%;
+}
+
+.experience-list{
+    margin: 5%;
+}
+
+.card{
+    background-color: #ccd6f6;
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.project-content h2{
+    margin-left: 10%;
+}
+
+.end-content{
+    width: 100%;
+    text-align: center;
+}
+
+.section{
+    top: 300px;
+}
+
+.container[id]::before {
+    content: "";
+    display: block;
+    height: 70px; /* Adjusted height to match navbar */
+    margin: -70px 0 0; /* Inverse of the height */
+    visibility: hidden;
+}
