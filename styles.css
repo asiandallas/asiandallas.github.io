@@ -1,52 +1,44 @@
-@media only screen and (max-width: 600px) {
-    /* Add your mobile styles here */
-    body {
-        background: linear-gradient(90deg, #1a1a49, #39396f);
-    }
-}
-
 html{
     scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(90deg, #1a1a49, #39396f);
-    color: white;
+    background-color: #112240;
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
 }
 
-.navbar{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    background-color: #1e1e56;
+.navbar.bg-dark {
+    background-color: #12284d !important;
 }
 
-.navbar-hidden {
-    top: -50px; 
+.navbar-dark .navbar-nav .nav-link {
+    color: silver !important;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: white;
-    float: right;
-    margin: 20px;
-    color:rgb(95, 192, 160);
+.nav-number{
+    color: #64ffda;
 }
 
-.navbar a:hover{
-    color: silver;
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #64ffda !important;
     transition: color 0.2s ease-in-out;
+    border-bottom: 0.5px solid #64ffda;
+}
+
+.nav-item{
+    margin: 5px !important;
+}
+
+.container{
+    position: relative;
+    margin-top: 10%;
 }
 
 .intro{
-    margin-top: 20vh; /* You can adjust the vertical position as needed */
+    margin-top: 20vh; 
     text-align: center;
-
 }
 
 .small-text{
@@ -57,22 +49,20 @@ body {
 .large-text{
     font-size: 70px;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    color: #ccd6f6
 }
 
 .bio{
     font-size: 20px;
+    color: #a8b2d1
 }
-
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 300px;
+.social-buttons{
+    display: flex; 
+    align-items: center;
 }
 
 .button {
-    display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255); 
     color: rgb(0, 0, 0);
@@ -82,7 +72,7 @@ body {
     border-radius: 5px; 
     text-decoration: none;
     transition: background-color 0.3s ease; 
-    width: 180px;
+    width: 250px;
     font-size: x-large;
 }
 
@@ -94,125 +84,7 @@ body {
 
 .button:hover {
     background-color: silver;
-}
-
-.about-content {
-    display: flex;
-    align-items: center; 
-    width: 1200px;
-}
-
-.text h2{
-    color: #5fc0a0;
-}
-
-.section{
-   margin-left: 100px;
-   margin-bottom: 200px;
-}
-
-.images{
-    margin-left:200px;
-    margin-top: 50px;
-}
-
-.images img{
-    border-radius: 5px;
-    margin-bottom: 80px;
-}
-
-.experience-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.experience-box{
-    padding: 15px;
-    margin: 40px;
-    margin-left: 1px;
-    box-sizing: border-box;
-    min-height: 100px;
-    display: flex;
-    border-top: 1.5px solid rgb(95, 192, 160);
-}
-
-.experience-box:hover{
-    transform: scale(1.05); 
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
-}
-
-.experience-details{
-    flex-direction: column;
-    min-width: 300px;
-    margin-left: 10px;
-}
-
-.experience-summary {
-    flex-direction: column;
-    margin-left: 50px; 
-    margin-right: 50px;
-    align-self: center;
-}
-
-.project-content{
-   display: flex; 
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.project-content h3{
-    text-align: center;
-}
-
-.project-box:hover{
-    transform: scale(1.05); 
-    box-shadow: 0 0 500px rgba(0, 0, 0, 0.2);
-}
-
-.project-box{
-    box-sizing: border-box;
-    border: 2px solid rgb(95, 192, 160);
-    padding: 20px;
-    width: 300px;
-    height: 430px;
-    margin: 20px;
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
-}
-
-/* Center the single project on the second row */
-.project-box:nth-child(5) {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-box a{
     text-decoration: none;
-    color: black;
 }
 
-.github-button{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255); 
-    color: rgb(0, 0, 0);
-    padding: 10px 20px; 
-    margin: 40px; 
-    border: none;
-    border-radius: 5px; 
-    text-decoration: none;
-    transition: background-color 0.3s ease; 
-    width: 120px;
-    height: 20px;
-    font-size: large;
-}
 
-.github-button img {
-    width: 50px; 
-    height: 50px; 
-    margin-right:20px; 
-}
-
-.github-button:hover {
-    background-color: silver;
-}
