@@ -1,13 +1,16 @@
 let prevScrollPos = window.pageYOffset;
 
         window.onscroll = function() {
-            let currentScrollPos = window.pageYOffset;
+        let currentScrollPos = window.pageYOffset;
 
+        let navbar = document.getElementById("myNavbar");
+        if (navbar) {
             if (prevScrollPos > currentScrollPos) {
-                document.getElementById("myNavbar").classList.remove("navbar-hidden");
+                navbar.classList.remove("navbar-hidden");
             } else {
-                document.getElementById("myNavbar").classList.add("navbar-hidden");
+                navbar.classList.add("navbar-hidden");
             }
+        }
 
             prevScrollPos = currentScrollPos;
         };
